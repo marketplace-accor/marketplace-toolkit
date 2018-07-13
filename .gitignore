@@ -1,0 +1,9 @@
+/config/packages/dev/mirakl.yaml
+/config/packages/test/mirakl.yaml
+/config/packages/prod/mirakl.yaml
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
