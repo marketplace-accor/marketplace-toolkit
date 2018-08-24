@@ -155,7 +155,7 @@ class CreateShopsCsvParser extends AbstractCsvParser
             if (!in_array($values['shipping_setting_unit'], array('price', 'quantity', 'packaging_unit'))) {
                 throw new Exception('Invalid shipping_setting_unit '.$values['shipping_setting_unit'].'  provided [price, quantity, packaging_unit]');
             }
-            $shippingSettingUnit = new AdditionalFieldValue('minimal-order-quantity', $values['minimal_order_quantity']);
+            $shippingSettingUnit = new AdditionalFieldValue('shipping-setting-unit', $values['shipping-setting-unit']);
             $additionalFields->add($shippingSettingUnit);
         }
         if (isset($values['shipping_price_threshold']) && trim($values['shipping_price_threshold']) != "") {
